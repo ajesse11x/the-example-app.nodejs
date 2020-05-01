@@ -17,7 +17,9 @@
     "test:integration": "jest test/integration",
     "test:integration:watch": "jest test/integration --watch",
     "test:unit": "jest test/unit",
-    "test:unit:watch": "jest test/unit --watch"
+    "test:unit:watch": "jest test/unit --watch",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "engines": {
     "node": ">=8.9.3"
@@ -33,7 +35,8 @@
     "lodash": "^4.17.5",
     "marked": "^0.3.16",
     "morgan": "^1.9.0",
-    "pug": "~2.0.0-beta6"
+    "pug": "~2.0.0-beta6",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "cheerio": "^1.0.0-rc.2",
@@ -48,5 +51,6 @@
     "nodemon": "^1.15.1",
     "supertest": "^3.0.0",
     "yargs": "^11.0.0"
-  }
+  },
+  "snyk": true
 }
